@@ -174,7 +174,7 @@ sliderContainer.appendChild(pointsLabel);
 const pointsSlider = document.createElement('input');
 pointsSlider.type = 'range';
 pointsSlider.min = '500';
-pointsSlider.max = '1000';
+pointsSlider.max = '10000';
 pointsSlider.value = '950';
 pointsSlider.style.width = '70%';
 pointsSlider.style.marginLeft = '1vw';
@@ -685,7 +685,7 @@ setInterval(function () {
     if (autoAnswer){
         if (info.ILSetQuestion != info.questionNum){
             var ppt = Answered_PPT
-            if (ppt > 987) ppt = 1000
+            if (ppt > 100) ppt = 10000
             var incrementElement = FindByAttributeValue("data-functional-selector", "score-increment", "span")
             if (incrementElement){
                 info.ILSetQuestion = info.questionNum
